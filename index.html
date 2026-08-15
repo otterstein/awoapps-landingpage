@@ -2,22 +2,95 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>AWO Apps – Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWO Apps – Professional Apps</title>
     <style>
         body { 
             background: #0f172a; 
             color: white; 
-            font-family: system-ui, sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            height: 100vh; 
+            min-height: 100vh; 
             margin: 0; 
+            padding: 2rem 1rem;
         }
-        h1 { font-size: 2.5rem; }
+        .container { text-align: center; max-width: 600px; width: 100%; }
+        
+        /* Publisher Branding */
+        .publisher-logo { width: 100px; height: auto; margin-bottom: 0.5rem; }
+        .publisher-title { font-size: 1.2rem; letter-spacing: 2px; color: #94a3b8; margin-bottom: 3rem; text-transform: uppercase; }
+        
+        /* App Card */
+        .app-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .app-icon { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 1rem; }
+        h1 { font-size: 1.8rem; margin: 0 0 0.5rem 0; }
+        .tagline { color: #38bdf8; font-weight: 600; margin-bottom: 1.5rem; }
+        
+        ul.features {
+            text-align: left;
+            color: #cbd5e1;
+            padding-left: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group { display: flex; flex-direction: column; gap: 0.8rem; }
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-secondary { background: #334155; }
+
+        footer { margin-top: 3rem; font-size: 0.85rem; color: #64748b; }
+        footer a { color: #94a3b8; text-decoration: none; margin: 0 0.5rem; }
     </style>
 </head>
 <body>
-    <h1>AWO Apps – Building something awesome... 🚀</h1>
+
+    <div class="container">
+        <!-- Publisher Branding -->
+        <img src="assets/images/awo-logo.png" alt="AWO Apps Logo" class="publisher-logo">
+        <div class="publisher-title">AWO APPS</div>
+
+        <!-- Flaggschiff App: Schachuhr -->
+        <div class="app-card">
+            <img src="assets/images/chess-clock-icon.png" alt="Schachuhr Icon" class="app-icon">
+            <h1>AWO Chess Clock</h1>
+            <div class="tagline">Präzision & Fokus für dein Schachspiel</div>
+
+            <ul class="features">
+                <li>⏱️ <strong>Modi:</strong> Blitz, Bullet, Rapid, Fischer-Inkrement & Delay.</li>
+                <li>⚡ <strong>Low Latency:</strong> Höchste Genauigkeit & haptisches Feedback.</li>
+                <li>🎨 <strong>Turnier-Design:</strong> Minimalistisch & extrem gut ablesbar.</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="DEIN_GOOGLE_PLAY_BETA_LINK" target="_blank" class="btn">
+                    🚀 Am Android-Test teilnehmen
+                </a>
+                <a href="DEIN_GOOGLE_FORMS_LINK" target="_blank" class="btn btn-secondary">
+                    📝 Feedback & Bugs melden
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <a href="de/privacy.html">Datenschutz</a> | 
+            <a href="de/impressum.html">Impressum</a>
+        </footer>
+    </div>
+
 </body>
 </html>
