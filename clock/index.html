@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess Clock by AWOApps</title>
+  <!-- Fallback nach 0 Sekunden -->
+  <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.awoapps.chessclock">
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.awoapps.chessclock";
+    const appStoreUrl = "https://apps.apple.com/app/DEINE_APP_ID"; // Für später vorbereitet
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.replace(appStoreUrl);
+    } else {
+      window.location.replace(playStoreUrl);
+    }
+  </script>
+</head>
+<body style="background:#121212; color:#fff; font-family:sans-serif; text-align:center; padding-top:20vh;">
+  <p>Weiterleitung zu <strong>Chess Clock by AWOApps</strong>...</p>
+  <p><a href="https://play.google.com/store/apps/details?id=DEIN_PACKAGE_NAME" style="color:#2dd4bf;">Hier klicken, falls nichts passiert.</a></p>
+</body>
+</html>
